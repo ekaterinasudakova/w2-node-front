@@ -5,6 +5,7 @@ document.querySelector('button.tagit').addEventListener("click", function () {
 
 	// send the tag to the server
 	let tagValue = document.querySelector('[name="tag"]').value;
+	let recentTag = document.querySelector('.recent-tag');
 	console.log('got tag from input', tagValue);
 
 	axios.post('http://localhost:4200/tag', {
@@ -14,5 +15,7 @@ document.querySelector('button.tagit').addEventListener("click", function () {
 	}).catch(function (error) {
 		console.log(error);
 	});
+
+	recentTag.innerHTML = 'Your tag - ' + tagValue + ' has been submitted successfully';
 });
 //# sourceMappingURL=main.js.map

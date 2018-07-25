@@ -79,14 +79,80 @@ body {
 
 body.wall {
 	background-image: url(../img/brick.jpg);
+	height: 1vh;
 }
 
 /* 2. Content ================================= */
-p.tag {
+.bg {
+	position: relative;
+	background-image: url(../img/dog-tag.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100vh;
+	height: 100vh;
+}
+
+h1 {
+	font-size: 4em;
+	position: relative;
+	text-align: center;
+	top: 1.5em;
+	background-color: rgba(243, 106, 68, 0.71);
+	width: 75%;
+	margin: 0 auto;
+	padding: .25em 0;
+}
+
+.input-container {
 	position: absolute;
+	width: 30%;
+	top: 45%;
+	left: 30%;
+	margin: 2em 0;
+	padding: 2em 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	transform: rotate(-20deg);
+}
+
+.input-container input {
+	font-size: 1em;
+	padding: 1.5em 3em;
+	border-radius: .5em;
+	border: transparent;
+}
+
+.input-container .tagit {
+	margin-top: 2em;
+	text-transform: uppercase;
+	font-size: 1em;
+	padding: .25em  1em;
+}
+
+p.recent-tag {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
 	font-family: 'Rock Salt', cursive;
 	font-size: 4em;
 	text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.tag {
+	position: relative;
+	height: 2em;
+	display: block;
+	font-family: 'Rock Salt', cursive;
+	font-size: 3em;
+	text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+	padding: .25em .5em;
+}
+
+.container {
+	display: grid;
+	grid-template-rows: repeat(10, 10%);
+	grid-template-columns: repeat(10, 10%);
 }
 
 /*# sourceMappingURL=main.css.map */
