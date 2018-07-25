@@ -1,0 +1,43 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+0. Reset
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+/* 0. Reset ================================= */
+@import 'reset';
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #ccc;
+}
+
+body.wall {
+	background-image: url(../img/brick.jpg);
+}
+
+
+
+/* 2. Content ================================= */
+
+p.tag {
+	position: absolute;
+	font-family: 'Rock Salt', cursive;
+	font-size: 4em;
+	text-shadow: 0 0 10px rgba(0,0,0,0.75); 
+}
